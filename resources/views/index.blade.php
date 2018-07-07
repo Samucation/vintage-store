@@ -1,11 +1,11 @@
 @extends('layout.site')
 
-@section('titulo', 'Cursos')
+@section('titulo', 'Vintage Store')
 
 
 
 @section('conteudo')
-  <h1>Teste X</h1>
+  <h1>Corpo da pagina</h1>
 
 
 @endsection

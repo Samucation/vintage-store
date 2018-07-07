@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/', ['as'=>'vintage.public.index', 'uses'=>'Home\PageTemplateController@index']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
