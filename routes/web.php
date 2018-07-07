@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', ['as'=>'vintage.public.index', 'uses'=>'Home\PageTemplateController@index']);

@@ -1,0 +1,64 @@
+
+.center-align-span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.head-div {
+  line-height: 5px!important;
+  background-color: black;
+}
+
+.div-search-column-left {
+    float: left;
+}
+
+.div-search-column-right {
+    float: left;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 32%;
+}
+
+.font-color-black {
+  color:black!important;"
+}
+
+.input-search {
+  height: 2rem!important;
+}
+
+/**Start Default color placeholder with opacity 100% and color black */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+/**End Default color placeholder with opacity 100% and color black */
+
+.img-logo-topo {
+  margin-left: 8%!important;
+  margin-top: -0.4%!important;
+}
+
+.div-icon-search {
+  margin-left: -25px!important;
+}
+
+.font-txt-options-header {
+  font-size: 10px!important;
+  font-weight: bold!important;
+}
