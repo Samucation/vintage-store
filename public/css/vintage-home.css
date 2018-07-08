@@ -1,5 +1,5 @@
 
-
+/**CSS Toop and Footer of Layout Vintage Store */
 
 /**Remove right body scrollbar chrome. */
 ::-webkit-scrollbar {
@@ -130,6 +130,21 @@
 
 .txt-align-center {
   text-align: center;
+}
+
+.txt-header-description-footer-email {
+  letter-spacing: 4px;
+}
+
+.email-footer-input {
+  width: 18%!important;
+}
+
+.btn-footer-subscribe {
+  background-color: black;
+  color:white;
+  height:50px;
+  width: 140px;
 }
 
 /**End CSS format footer objects */
