@@ -62,3 +62,28 @@
   font-size: 10px!important;
   font-weight: bold!important;
 }
+
+.topo-options-txt-footer {
+  font-weight: bold!important;
+}
+
+.column-one-txt {
+  font-size: 12px;
+}
+
+.txt-align-center {
+  text-align: center;
+}
+
+
+/**Inicio Footer CSS, inserir o footer para baixo*/
+/**.body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ .main {
+   flex: 1 0 auto;
+ }*/
+ /**Fim Footer CSS, inserir o footer para baixo*/
