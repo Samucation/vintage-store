@@ -20,3 +20,12 @@ Route::get('/', ['as'=>'vintage.public.index', 'uses'=>'Home\PageTemplateControl
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Rotas da categoria.
+Route::get('/categoria',  ['uses'=>'Produto\CategoriaController@index']);
+Route::post('/categoria', ['uses'=>'Produto\CategoriaController@novaCategoria']);
+
+//Rotas do produtos
+Route::get('/produto', ['uses'=>'Produto\ProdutoController@index']);
+Route::post('/produto', ['uses'=>'Produto\ProdutoController@store']);
+Route::post('/produto/upload', 'Produto\ProdutoController@upload')->name('upload_products');

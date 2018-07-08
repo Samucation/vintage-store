@@ -7,6 +7,31 @@
 }
 
 /**Start CSS format header menu objects. */
+
+/**CSS msg count number shopping cart */
+.cart-items-count{
+    position:relative;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    top:-55px;
+}
+
+/**CSS msg count number shopping cart */
+.notification-counter {
+    position: absolute;
+    margin-top: 5px;
+    left: 15px;
+    background-color: rgba(212, 19, 13, 1);
+    color: #fff;
+    border-radius: 3px;
+    padding: 1px 3px;
+    font: 8px Verdana;
+
+    border-radius: 100%;
+    behavior: url(PIE.htc);
+}
+
 .nav-top {
   background-color: white;
   height: 80px;

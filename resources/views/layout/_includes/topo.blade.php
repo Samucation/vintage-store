@@ -54,7 +54,12 @@
          <li>
            <div class="div-icon-shopping-cart" >
              <label class="label-icon " for="search"  >
-                <i class="material-icons font-color-black">shopping_cart</i>
+               <a href="">
+                  <i class="material-icons font-color-black">
+                    shopping_cart
+                  </i>
+                  <span class="cart-items-count "><span class="notification-counter">3</span></span>
+               </a>
              </label>
            </div>
          </li>
