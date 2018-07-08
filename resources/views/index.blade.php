@@ -5,7 +5,7 @@
 @section('conteudo')
   <br/>
   <br/>
-  <h1>Corpo da pagina</h1>
+  <h1 class="fade-txt-effect">Corpo da pagina</h1>
   <br/>
   <br/>
   <br/>

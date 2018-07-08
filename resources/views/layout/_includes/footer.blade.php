@@ -1,5 +1,5 @@
 
-  <div align="center"  >
+  <div class="fade-txt-effect" align="center " >
     <h3 class="txt-header-description-footer-email" >WANT 80% OFF?</h3>
     <h5>SUBSCRIBE BELOW TO GET</h5>
     <input id="email" class="input-search email-footer-input"
@@ -11,7 +11,7 @@
   <br/>
   <br/>
   <footer class="page-footer footer-tag" >
-    <div class="container">
+    <div class="container fade-txt-effect">
 
       <div class="row" >
         <div class="col l6 s12 column-one-txt-block-footer " >
@@ -42,11 +42,11 @@
       </div>
 
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright fade-txt-effect" >
       <h6 class="white-text column-one-txt footer-of-footer-left-txt-column " >
             support@vicenrowhatches.com
       </h6>
-      <div class="container footer-of-footer-right-txt-column" >
+      <div class="container footer-of-footer-right-txt-column " >
            <a class="grey-text text-lighten-4 column-one-txt" href="#!">
                2018 Vintage - All rights reserved.
             </a>
