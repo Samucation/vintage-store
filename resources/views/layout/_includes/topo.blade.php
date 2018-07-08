@@ -13,10 +13,9 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
+<body >
 <header>
-
-  <nav style="background-color: white;height: 80px;" >
+  <nav class="nav-top" >
     <div class="head-div" align="center" >
        <span class="center-align-span" >FREE SHIPPING</span>
     </div>
@@ -36,7 +35,7 @@
        </ul>
 
        <a href="#" data-target="mobile" class="sidenav-trigger">
-         <i class="material-icons" style="color:black!important;">menu</i>
+         <i class="material-icons color-black" >menu</i>
        </a>
        <ul class="right hide-on-med-and-down">
          <li>
@@ -52,7 +51,7 @@
           </div>
          </li>
          <li>
-           <div style="margin-left: 15px!important;" >
+           <div class="div-icon-shopping-cart" >
              <label class="label-icon " for="search"  >
                 <i class="material-icons font-color-black">shopping_cart</i>
              </label>

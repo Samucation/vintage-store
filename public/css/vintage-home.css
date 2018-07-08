@@ -1,4 +1,27 @@
 
+
+
+/**Remove right body scrollbar chrome. */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/**Start CSS format header menu objects. */
+.nav-top {
+  background-color: white;
+  height: 80px;
+  position: fixed;
+  top: 0;
+}
+
+.color-black {
+  color:black!important;
+}
+
+.div-icon-shopping-cart {
+  margin-left: 15px!important;
+}
+
 .center-align-span {
   display: inline-block;
   vertical-align: middle;
@@ -47,7 +70,7 @@
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
 }
-/**End Default color placeholder with opacity 100% and color black */
+/**End Default color place hoeder with opacity 100% and color black */
 
 .img-logo-topo {
   margin-left: 8%!important;
@@ -62,9 +85,43 @@
   font-size: 10px!important;
   font-weight: bold!important;
 }
+/**End CSS format header menu objects. */
+
+/**Start CSS format footer objects */
+.footer-tag {
+  background-color: black;
+}
+
+.txt-name-of-aplication-footer {
+  margin-top: -2px;
+}
+
+.column-one-txt-block-footer {
+  width: 15%!important;
+}
+
+.column-two-txt-block-footer {
+  width: 20%!important;
+}
+
+.column-three-txt-block-footer {
+  width: 20%!important;
+}
+
+.column-four-txt-block-footer {
+  width:28%!important;
+}
 
 .topo-options-txt-footer {
   font-weight: bold!important;
+}
+
+.footer-of-footer-left-txt-column {
+  margin-left:15.8%!important;
+}
+
+.footer-of-footer-right-txt-column {
+  margin-left:43%!important;
 }
 
 .column-one-txt {
@@ -75,15 +132,4 @@
   text-align: center;
 }
 
-
-/**Inicio Footer CSS, inserir o footer para baixo*/
-/**.body {
-   display: flex;
-   min-height: 100vh;
-   flex-direction: column;
- }
-
- .main {
-   flex: 1 0 auto;
- }*/
- /**Fim Footer CSS, inserir o footer para baixo*/
+/**End CSS format footer objects */
