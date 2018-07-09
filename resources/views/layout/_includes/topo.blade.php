@@ -25,7 +25,7 @@
 
        <ul class="hide-on-med-and-down" style="margin-left:20%!important;">
          <li>
-           <a class="font-color-black font-txt-options-header" href=""  >FOR MAN</a>
+           <a class="font-color-black font-txt-options-header" href="/products-list-store"  >FOR MAN</a>
          </li>
          <li>
            <a class="font-color-black font-txt-options-header" href="" >FOR WOMAN</a>
