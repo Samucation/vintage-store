@@ -1,11 +1,14 @@
-@extends('layout.site')
+@extends('layout.admin-layout-site')
 
 @section('titulo', 'Categorias')
 
 @section('conteudo')
+<br/><br/><br/><br/>
+<div align="center" >
+  <div class="external-div-registers" >
+    <div class="width-div-external-register-pages" >
     <br/>
-    <br/>
-    <h2>Lista de categorias</h2>
+    <h4>Lista de categorias</h4>
 
     <table>
         <thead>
@@ -21,15 +24,23 @@
                 <td>{{$cat->descricao}}</td>
                 </tr>
             @endforeach
-
         </tbody>
     </table>
-
-    <form action="/categoria" method="POST">
-        {{ csrf_field() }}
-        Nome: <input name="nome" type="text" />
-        Descricao: <input name="descricao" type="text" />
-        <button>Enviar</button>
-    </form>
+   </div>
+   <div align="left" class="width-div-external-register-pages" >
+       <div align="center" >
+         <h4>Incluir novo categoria</h4>
+       </div>
+       <form action="/categoria" method="POST">
+           {{ csrf_field() }}
+           <span class="font-bold">Nome:</span><input class="refactory-height-input-space" name="nome" type="text" />
+           <span class="font-bold">Descricao:</span><input class="refactory-height-input-space" name="descricao" type="text" />
+           <br/><br/>
+           <button class="btn-style-cadastros" >Enviar</button>
+           <br/><br/>
+       </form>
+   </div>
+</div>
+<br/>
 
 @endsection

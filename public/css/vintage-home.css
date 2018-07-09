@@ -6,6 +6,14 @@
   display: none;
 }
 
+.font-bold {
+  font-weight: bold!important;
+}
+
+.refactory-height-input-space {
+  height: 2rem!important;
+}
+
 /**Start CSS format header menu objects. */
 
 /**CSS msg count number shopping cart */
@@ -33,6 +41,7 @@
 }
 
 .nav-top {
+  z-index: 9999;
   background-color: white;
   height: 80px;
   position: fixed;
@@ -171,16 +180,53 @@
   height:50px;
   width: 140px;
 }
+
+.email-footer-external-div {
+   position: relative!important;
+}
 /**End CSS format footer objects */
 
-/**CSS Product registration */
-.btn-save-new-product {
+/**CSS Admin Pages */
+.btn-style-cadastros {
   background-color: black;
   color:white;
   height:50px;
   width: 140px;
 }
 
-.width-div-external-register-product {
+.external-div-registers {
+  background-color: #edf2e9;
+  width:85%;
+}
+
+.width-div-external-register-pages {
   width: 80%!important;
+}
+
+.external-container-img-home-header {
+   max-height: 500px!important;
+}
+
+.internal-img-and-txt-toop-home-header-container {
+    position: relative;
+}
+
+.txt-toop-header-over-principal-home-img {
+  letter-spacing:5px;
+}
+
+.txt-bootom-header-over-principal-home-img {
+  letter-spacing:2px;
+  font-size: 21px!important;
+}
+
+/* Txt toop home, ove img */
+.text-block-over-img-home-header {
+    text-align: left;
+    position: absolute;
+    bottom: 60%;
+    left: 10%;
+    color: white;
+    padding-left: 2%;
+    padding-bottom: 2%;
 }

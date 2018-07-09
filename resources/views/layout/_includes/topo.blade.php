@@ -21,7 +21,7 @@
        <span class="center-align-span" >FREE SHIPPING</span>
     </div>
      <div class="nav-wrapper font-color-black" >
-       <a href="#!" class="brand-logo font-color-black img-logo-topo" >Vintage</a>
+       <a href="/" class="brand-logo font-color-black img-logo-topo" >Vintage</a>
 
        <ul class="hide-on-med-and-down" style="margin-left:20%!important;">
          <li>

@@ -1,13 +1,13 @@
-@extends('layout.site')
+@extends('layout.admin-layout-site')
 
 @section('titulo', 'Produtos')
 
 @section('conteudo')
 <br/><br/><br/><br/>
 <div align="center" >
-  <div style="background-color: #edf2e9;width:85%;" >
+  <div class="external-div-registers" >
     <br/>
-    <div class="width-div-external-register-product" >
+    <div class="fade-txt-effect width-div-external-register-pages" >
       <h4>Lista de produtos</h4>
       <table>
           <thead>
@@ -35,36 +35,36 @@
       <br/>
     </div>
 
-    <div align="left" class="width-div-external-register-product" >
+    <div  class="fade-txt-effect width-div-external-register-pages" align="left" >
         <div align="center" >
           <h4>Incluir novo produto</h4>
         </div>
 
         <form action="/produto" method="POST">
             {{ csrf_field() }}
-            Categoria: <select name="categoria_id">
+            <span class="font-bold">Categoria:</span><select name="categoria_id">
                         @foreach($categorias as $cat)
                             <option value="{{$cat->id}}">{{$cat->nome}}</option>
                         @endforeach
                         </select>
             <br/>
-
-            Nome: <input name="nome" type="text" />
+            <span class="font-bold">Nome:</span><input class="refactory-height-input-space" name="nome" type="text" />
             <br/>
-            Descricao: <input name="descricao" type="text" />
+            <span class="font-bold">Descricao:</span><input class="refactory-height-input-space" name="descricao" type="text" />
             <br/>
-            Modelo: <input name="modelo" type="text" />
+            <span class="font-bold">Modelo:</span><input class="refactory-height-input-space" name="modelo" type="text" />
             <br/>
-            Preco: <input name="preco" type="text" />
+            <span class="font-bold">Preco:</span><input class="refactory-height-input-space" name="preco" type="text" />
             <br/>
-            Qtde estoque: <input name="qtde_estoque" type="text" />
+            <span class="font-bold">Qtde estoque:</span><input class="refactory-height-input-space" name="qtde_estoque" type="text" />
             <br/><br/>
-            <button class="btn-save-new-product">Enviar</button>
+            <button class="btn-style-cadastros">Enviar</button>
         </form>
     </div>
     <br/>
   </div>
 </div>
+<br/>
 
 
 
