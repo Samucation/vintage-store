@@ -9,24 +9,26 @@
     <div class="width-div-external-register-pages" >
     <br/>
     <h4>Lista de categorias</h4>
-
-    <table>
-        <thead>
-           <th>Id</th>
-           <th>Nome</th>
-           <th>Descricao</th>
-        </thead>
-        <tbody>
-            @foreach($categorias as $cat)
-                <tr>
-                <td>{{$cat->id}}</td>
-                <td>{{$cat->nome}}</td>
-                <td>{{$cat->descricao}}</td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
+    <div class="active-scrollbar-registers">
+      <table>
+          <thead>
+             <th>Id</th>
+             <th>Nome</th>
+             <th>Descricao</th>
+          </thead>
+          <tbody>
+              @foreach($categorias as $cat)
+                  <tr>
+                  <td>{{$cat->id}}</td>
+                  <td>{{$cat->nome}}</td>
+                  <td>{{$cat->descricao}}</td>
+                  </tr>
+              @endforeach
+          </tbody>
+      </table>
    </div>
+   </div>
+   <br/>
    <div align="left" class="width-div-external-register-pages" >
        <div align="center" >
          <h4>Incluir novo categoria</h4>

@@ -1,6 +1,56 @@
 
 /**CSS Toop and Footer of Layout Vintage Store */
 
+/**global remove margin and padding */
+/** *{ margin: 0; padding: 0; } */
+
+/**Btn voltar ao topo*/
+#return-to-top {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    background: rgb(0, 0, , 0.1);
+    background: rgba(191, 191, 191, 1);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+/*Fim btn voltar ao topo*/
+
+
 /**Remove right body scrollbar chrome. */
 ::-webkit-scrollbar {
   display: none;
@@ -152,11 +202,11 @@
 }
 
 .footer-of-footer-left-txt-column {
-  margin-left:15.8%!important;
+  margin-left:9.9%!important;
 }
 
 .footer-of-footer-right-txt-column {
-  margin-left:43%!important;
+  margin-left:53%!important;
 }
 
 .column-one-txt {
@@ -230,4 +280,9 @@
     color: white;
     padding-left: 2%;
     padding-bottom: 2%;
+}
+
+.active-scrollbar-registers {
+  height: 300px;
+  overflow: auto;
 }

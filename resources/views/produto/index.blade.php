@@ -9,32 +9,34 @@
     <br/>
     <div class="fade-txt-effect width-div-external-register-pages" >
       <h4>Lista de produtos</h4>
-      <table>
-          <thead>
-             <th>Id</th>
-             <th>Categoria</th>
-             <th>Nome</th>
-             <th>Descricao</th>
-             <th>Modelo</th>
-             <th>Preco</th>
-             <th>Qtde estoque</th>
-          </thead>
-          <tbody>
-              @foreach($produtos as $prod)
-                  <tr>
-                      <td>{{$prod->id}}</td>
-                      <td>{{$prod->categoria->nome}}</td>
-                      <td>{{$prod->descricao}}</td>
-                      <td>{{$prod->modelo}}</td>
-                      <td>{{$prod->preco}}</td>
-                      <td>{{$prod->qtde_estoque}}</td>
-                  </tr>
-              @endforeach
-          </tbody>
-      </table>
+      <div class="active-scrollbar-registers">
+        <table>
+            <thead>
+               <th>Id</th>
+               <th>Categoria</th>
+               <th>Nome</th>
+               <th>Descricao</th>
+               <th>Modelo</th>
+               <th>Preco</th>
+               <th>Qtde estoque</th>
+            </thead>
+            <tbody>
+                @foreach($produtos as $prod)
+                    <tr>
+                        <td>{{$prod->id}}</td>
+                        <td>{{$prod->categoria->nome}}</td>
+                        <td>{{$prod->descricao}}</td>
+                        <td>{{$prod->modelo}}</td>
+                        <td>{{$prod->preco}}</td>
+                        <td>{{$prod->qtde_estoque}}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+      </div>
       <br/>
     </div>
-
+    <br/>
     <div  class="fade-txt-effect width-div-external-register-pages" align="left" >
         <div align="center" >
           <h4>Incluir novo produto</h4>
