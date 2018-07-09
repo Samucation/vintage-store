@@ -16,6 +16,6 @@ class Categoria extends Model
      // campos que devem ser unicos na tabela
      $matchThese = array('nome'=>$nome);
      // se ja existir um registro com o mesmo nome de $nome, sera um update. Se nao existir, sera um insert
-     Categoria::updateOrCreate($matchThese,['descricao'=>$descricao]);
+     return Categoria::updateOrCreate($matchThese,['descricao'=>$descricao]); 
   }
 }

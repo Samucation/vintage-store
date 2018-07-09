@@ -1,8 +1,9 @@
-@extends('layout.site')
+@extends('layout.admin-layout-site')
 
 @section('titulo', 'Produtos')
 
 @section('conteudo')
+    <br/><br/>
     <h2>Upload de arquivos</h2>
 
     <form action="/produto/upload" method="post" enctype="multipart/form-data" accept=".csv">
@@ -11,4 +12,5 @@
         <button>Enviar</button>
     </form>
 
+    <br/><br/>
 @endsection

@@ -29,3 +29,4 @@ Route::post('/categoria', ['uses'=>'Produto\CategoriaController@novaCategoria'])
 Route::get('/produto', ['uses'=>'Produto\ProdutoController@index']);
 Route::post('/produto', ['uses'=>'Produto\ProdutoController@store']);
 Route::post('/produto/upload', 'Produto\ProdutoController@upload')->name('upload_products');
+Route::get('/produto/upload', 'Produto\ProdutoController@uploadPage');
