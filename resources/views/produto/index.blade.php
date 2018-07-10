@@ -4,66 +4,62 @@
 
 @section('conteudo')
 <br/><br/><br/><br/>
+<div class="external-div-registers" >
+  <br/>
+  <h3 class="center">Lista de produtos</h3>
+  <br/><br/>
+  <div class="active-scrollbar-registers fade-txt-effect">
+    <div class="row" style="width: 90%!important;margin-left:5%!important;">
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Categoria</th>
+            <th>Nome</th>
+            <th>Descricao</th>
+            <th>Modelo</th>
+            <th>Preco</th>
+            <th>Qtde estoque</th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach($produtos as $prod)
+            <tr>
+              <td>{{$prod->id}}</td>
+              <td>{{$prod->categoria->nome}}</td>
+              <td>{{$prod->descricao}}</td>
+              <td>{{$prod->modelo}}</td>
+              <td>{{$prod->preco}}</td>
+              <td>{{$prod->qtde_estoque}}</td>
+              <td>
+                <a class="btn deep-yellow" href=""><i class="material-icons left">edit</i>Editar</a>
+                <a class="btn red" href="{{ route('produto.delete', $prod->id) }} "><i class="material-icons left">delete</i>Deletar</a>
+              </td>
+            </tr>
+          @endforeach
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<br/><br/><br/><br/>
 <div align="center" >
-  <div class="external-div-registers" >
-    <br/>
-    <div class="fade-txt-effect width-div-external-register-pages" >
-      <h4>Lista de produtos</h4>
-      <div class="active-scrollbar-registers">
-        <table>
-            <thead>
-               <th>Id</th>
-               <th>Categoria</th>
-               <th>Nome</th>
-               <th>Descricao</th>
-               <th>Modelo</th>
-               <th>Preco</th>
-               <th>Qtde estoque</th>
-            </thead>
-            <tbody>
-                @foreach($produtos as $prod)
-                    <tr>
-                        <td>{{$prod->id}}</td>
-                        <td>{{$prod->categoria->nome}}</td>
-                        <td>{{$prod->descricao}}</td>
-                        <td>{{$prod->modelo}}</td>
-                        <td>{{$prod->preco}}</td>
-                        <td>{{$prod->qtde_estoque}}</td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
-      </div>
-      <br/>
-    </div>
-    <br/>
-    <div  class="fade-txt-effect width-div-external-register-pages" align="left" >
-        <div align="center" >
-          <h4>Incluir novo produto</h4>
-        </div>
+  <h4>Incluir novo produto</h4>
+</div>
+<div class="fade-txt-effect width-div-external-register-pages" align="left" style="margin-left:27%!important;" >
 
-        <form action="/produto" method="POST">
+
+      <div class="container" align="center">
+        <div class="row" >
+          <form class="" action="{{route('product.add.store')}}" method="POST" enctype="multipart/form-data" >
             {{ csrf_field() }}
-            <span class="font-bold">Categoria:</span><select name="categoria_id">
-                        @foreach($categorias as $cat)
-                            <option value="{{$cat->id}}">{{$cat->nome}}</option>
-                        @endforeach
-                        </select>
-            <br/>
-            <span class="font-bold">Nome:</span><input class="refactory-height-input-space" name="nome" type="text" />
-            <br/>
-            <span class="font-bold">Descricao:</span><input class="refactory-height-input-space" name="descricao" type="text" />
-            <br/>
-            <span class="font-bold">Modelo:</span><input class="refactory-height-input-space" name="modelo" type="text" />
-            <br/>
-            <span class="font-bold">Preco:</span><input class="refactory-height-input-space" name="preco" type="text" />
-            <br/>
-            <span class="font-bold">Qtde estoque:</span><input class="refactory-height-input-space" name="qtde_estoque" type="text" />
-            <br/><br/>
-            <button class="btn-style-cadastros">Enviar</button>
-        </form>
-    </div>
-    <br/>
+            @include('produto/_form')
+            <div class="row" align="left">
+               <button class="btn deep-green"><i class="material-icons left">save</i>Salvar</button>
+            </div>
+          </form>
+        </div>
+      </div>
   </div>
 </div>
 <br/>

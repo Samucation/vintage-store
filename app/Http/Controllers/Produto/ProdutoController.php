@@ -106,4 +106,10 @@ class ProdutoController extends Controller
   public function uploadPage(){
         return view('produto.upload');
   }
+
+  //Apagar Produto
+  public function delete($id){
+     //dd($id);
+     Produto::find($id)->delete();
+  }
 }

@@ -21,7 +21,7 @@ class CreateProdutosTable extends Migration
             $table->string('descricao');
             $table->string('modelo');
             $table->decimal('preco', 8, 2);
-            $table->integer('qtde_estoque');
+            $table->integer('qtde_estoque');          
             $table->timestamps();
         });
     }

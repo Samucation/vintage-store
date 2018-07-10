@@ -248,6 +248,7 @@
 .external-div-registers {
   background-color: #edf2e9;
   width:85%;
+  margin-left: 7%!important;
 }
 
 .width-div-external-register-pages {
@@ -283,6 +284,6 @@
 }
 
 .active-scrollbar-registers {
-  height: 300px;
+  height: 400px;
   overflow: auto;
 }

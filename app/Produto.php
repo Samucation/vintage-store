@@ -9,7 +9,7 @@ class Produto extends Model
 {
   //preenchiveis
   protected $fillable = ['nome','descricao','modelo','preco',
-                         'qtde_estoque','categoria_id'];
+                         'qtde_estoque','imagem','categoria_id'];
   //Nao preenchiveis
   protected $guarded = ['id', 'created_at', 'update_at'];
   protected $table = 'produtos';
@@ -20,6 +20,8 @@ class Produto extends Model
   }
 
   public static function novoProduto(Produto $produto){
+
+      //dd($produto);
       // se a categoria for valida, salva ou atualiza o produto
       if (Categoria::find($produto->categoria_id)->exists()){
           $matchThese = array('categoria_id'=>$produto->categoria_id,

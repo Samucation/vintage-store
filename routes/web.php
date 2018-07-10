@@ -26,7 +26,9 @@ Route::get('/categoria',  ['uses'=>'Produto\CategoriaController@index']);
 Route::post('/categoria', ['uses'=>'Produto\CategoriaController@novaCategoria']);
 
 //Rotas do produtos
-Route::get('/produto', ['uses'=>'Produto\ProdutoController@index']);
-Route::post('/produto', ['uses'=>'Produto\ProdutoController@store']);
+Route::get('/produto',  ['uses'=>'Produto\ProdutoController@index']);
+Route::post('/produto', ['as'=>'product.add.store', 'uses'=>'Produto\ProdutoController@store']);
+
+Route::get('/produto/{id}',  ['as'=>'produto.delete', 'uses'=>'Produto\ProdutoController@delete']);
 Route::post('/produto/upload', 'Produto\ProdutoController@upload')->name('upload_products');
 Route::get('/produto/upload', 'Produto\ProdutoController@uploadPage');
