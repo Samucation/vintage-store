@@ -2,7 +2,7 @@
   <h3 class="txt-header-description-footer-email" >WANT 80% OFF?</h3>
   <h5>SUBSCRIBE BELOW TO GET</h5>
   <input id="email" class="input-search email-footer-input"
-         type="search" placeholder="Email" >
+         type="search" placeholder="Email" style="width: 13%!important;" >
   <br/>
   <br/>
   <button type="button" class="btn-footer-subscribe" >SUBSCRIBE</button>
