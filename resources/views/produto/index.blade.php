@@ -31,8 +31,8 @@
               <td>{{$prod->modelo}}</td>
               <td>{{$prod->preco}}</td>
               <td>{{$prod->qtde_estoque}}</td>
-              <td>
-                <a class="btn deep-yellow" href=""><i class="material-icons left">edit</i>Editar</a>
+              <td> 
+                <a class="btn deep-yellow" href="{{ route('produto.editar', $prod->id) }}"><i class="material-icons left">edit</i>Editar</a>
                 <a class="btn red" href="{{ route('produto.delete', $prod->id) }} "><i class="material-icons left">delete</i>Deletar</a>
               </td>
             </tr>
@@ -47,8 +47,6 @@
   <h4>Incluir novo produto</h4>
 </div>
 <div class="fade-txt-effect width-div-external-register-pages" align="left" style="margin-left:27%!important;" >
-
-
       <div class="container" align="center">
         <div class="row" >
           <form class="" action="{{route('product.add.store')}}" method="POST" enctype="multipart/form-data" >

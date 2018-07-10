@@ -24,6 +24,8 @@ class ProdutoController extends Controller
 
   // Para cadastrar um novo produto a partir de uma tela
   public function store(Request $req){
+      // dd($req);
+
       $produto = new Produto();
       $produto->categoria_id = $req->get('categoria_id');
       $produto->nome = $req->get('nome');
@@ -111,5 +113,21 @@ class ProdutoController extends Controller
   public function delete($id){
      //dd($id);
      Produto::find($id)->delete();
+     return redirect()->route('product.index');
+  }
+
+  public function editar($id){
+     //dd($id);
+     $prod = Produto::find($id);
+     //dd($produto);
+     return view('produto.editar',compact('prod'));
+  }
+
+  public function atualizar(Request $req, $id) {
+    //dd($id);
+    $produto = $req->all();
+    //dd($produto);
+    Produto::find($id)->update($produto);
+    return redirect()->route('product.index');
   }
 }
