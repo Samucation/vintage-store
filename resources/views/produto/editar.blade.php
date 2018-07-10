@@ -4,9 +4,10 @@
 
 @section('conteudo')
 
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 <div align="center" >
   <h4>Editar produto</h4>
+  <br/>
 </div>
 <div class="fade-txt-effect width-div-external-register-pages" align="left" style="margin-left:27%!important;" >
       <div class="container" align="center">
@@ -23,7 +24,7 @@
       </div>
   </div>
 </div>
-<br/>
+<br/><br/><br/><br/><br/><br/>
 
 
 

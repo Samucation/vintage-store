@@ -19,6 +19,7 @@ class ProdutoController extends Controller
       $produtos = Produto::all();
 
       $categorias = Categoria::all();
+      //dd($produtos);
       return view('produto.index', compact('produtos', 'categorias'));
   }
 

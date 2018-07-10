@@ -14,8 +14,8 @@
         <thead>
           <tr>
             <th>Id</th>
-            <th>Categoria</th>
             <th>Nome</th>
+            <th>Categoria</th>
             <th>Descricao</th>
             <th>Modelo</th>
             <th>Preco</th>
@@ -26,12 +26,13 @@
           @foreach($produtos as $prod)
             <tr>
               <td>{{$prod->id}}</td>
+              <td>{{$prod->nome}}</td>
               <td>{{$prod->categoria->nome}}</td>
               <td>{{$prod->descricao}}</td>
               <td>{{$prod->modelo}}</td>
               <td>{{$prod->preco}}</td>
               <td>{{$prod->qtde_estoque}}</td>
-              <td> 
+              <td>
                 <a class="btn deep-yellow" href="{{ route('produto.editar', $prod->id) }}"><i class="material-icons left">edit</i>Editar</a>
                 <a class="btn red" href="{{ route('produto.delete', $prod->id) }} "><i class="material-icons left">delete</i>Deletar</a>
               </td>
